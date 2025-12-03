@@ -31,7 +31,7 @@ while (true) {
   }
 
   if (from.length === 3) break;
-  console.log("Invalid currency format. Use 3 letters like USD, EUR, ARS.\n");
+  console.log("Invalid currency format. Use 3 letters like USD or EUR.\n");
 }
 
   const to = (await ask("Convert to: ")).toUpperCase();
