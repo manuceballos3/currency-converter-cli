@@ -10,23 +10,23 @@ A clean, real-time currency converter for the terminal using JavaScript and Node
 ## How to run
 1. Install Node.js 18 or newer.
 2. Clone the repository: ```bash
-<pre>
+<br />
                          git clone https://github.com/manuceballos3/currency-converter-cli.git
-                         <pre>
+                         <br />
                          cd currency-converter-cli
-                         <pre>
+                         <br />
 Learn [How to clone a repository.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-<pre>
+<br />
 3. Install dependencies (node-fetch): npm install node-fetch
 4. Run the program: node index.js
 
 ## Example
 Amount to convert: 100
-<pre>
+<br />
 Convert from: USD
-<pre>
+<br />
 Convert to: EUR
-<pre>
+<br />
 Result: 100 USD = 86.1 EUR
 
 ## Why this project?
