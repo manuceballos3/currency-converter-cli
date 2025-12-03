@@ -16,8 +16,11 @@ Fetches live exchange rates from the public API [frankfurter.dev](https://frankf
 
 ## Example
 Amount to convert: 100
+<br />
 Convert from: USD
+<br />
 Convert to: EUR
+<br />
 Result: 100 USD = 86.1 EUR
 
 ## Why this project?
