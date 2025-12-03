@@ -27,10 +27,10 @@ while (true) {
 
     console.log(Object.keys(listData.rates).join(", "));
     console.log("\n");
-    continue; // vuelve a pedir "from" SIN romper nada
+    continue;
   }
 
-  if (from.length === 3) break; // formato simple para salir
+  if (from.length === 3) break;
   console.log("Invalid currency format. Use 3 letters like USD, EUR, ARS.\n");
 }
 
