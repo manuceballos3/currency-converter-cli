@@ -14,7 +14,26 @@ async function convert() {
   console.log("=== Currency Converter CLI ===");
 
   const amount = parseFloat(await ask("Amount to convert: "));
-  const from = (await ask("Convert from: ")).toUpperCase();
+  
+    let from;
+while (true) {
+  from = (await ask("Convert from (or type LIST to show currencies): ")).toUpperCase();
+
+  if (from === "LIST") {
+    console.log("\nAvailable currencies:\n");
+
+    const listRes = await fetch("https://api.frankfurter.app/latest");
+    const listData = await listRes.json();
+
+    console.log(Object.keys(listData.rates).join(", "));
+    console.log("\n");
+    continue; // vuelve a pedir "from" SIN romper nada
+  }
+
+  if (from.length === 3) break; // formato simple para salir
+  console.log("Invalid currency format. Use 3 letters like USD, EUR, ARS.\n");
+}
+
   const to = (await ask("Convert to: ")).toUpperCase();
 
   console.log("\nObtaining exchange rates...\n");
