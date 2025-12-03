@@ -1,11 +1,12 @@
 # Currency Converter CLI
 
-A clean, real-time currency converter for the terminal using JavaScript and Node.js.
+A clean, real-time currency converter for the terminal using JavaScript and Node.js.  
+Fetches live exchange rates from the public API [frankfurter.dev](https://frankfurter.dev/).
 
 ## Features
 - Convert any amount between two currencies.
 - Runs entirely from the terminal.
-- Short, readable code.
+- Short, readable, beginner-friendly code.
 
 ## How to run
 1. Install Node.js 18 or newer.
@@ -15,15 +16,12 @@ A clean, real-time currency converter for the terminal using JavaScript and Node
 
 ## Example
 Amount to convert: 100
-<br />
 Convert from: USD
-<br />
 Convert to: EUR
-<br />
 Result: 100 USD = 86.1 EUR
 
 ## Why this project?
-- Great first project.
-- Demonstrates working with APIs and async JavaScript.
-- Shows ability to create a clean CLI experience.
-- Ideal for an entry-level portfolio project.
+ - Great first project to demonstrate programming skills.
+ - Demonstrates working with APIs and async JavaScript.
+ - Shows ability to create a clean CLI experience.
+ - Ideal for an entry-level portfolio project.
